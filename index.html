@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <script src="https://kit.fontawesome.com/1e3583843c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Pssword Validation</title>
+</head>
+<body>
+    <h2 class="logo">KSDes<span>ign</span></h2>
+    <div class="main-container">
+    <div class="container">
+        <h1>Create New Password</h1>
+        <p>Your new Password must be different<br> from previous used Password.</p>
+
+        <div class="new-password">
+            <h3>New Password</h3>
+            <input type="password" class="new-password-input" placeholder="Create Password">
+            <i class="fas fa-eye" onclick="passToggle()"></i> 
+            <i class="fas fa-eye-slash" onclick="passToggle()"></i>
+            <p>Must be atleast 8 Characters</p>
+        </div>
+        
+        <div class="confirm-password">
+            <h3>Confirm Password</h3>
+            <input type="password" class="confirm-password-input" placeholder="Confirm password">
+        </div>
+
+        <p class="message">Both passwords must match.</p>
+        <button class="reset-button" onclick="passCheck()">CHECK</button>
+    </div>
+    </div>
+<script src="script.js"></script>   
+</body>
+</html>
